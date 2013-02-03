@@ -1,10 +1,14 @@
+# OUTDATED
+
+
+
 # HTC Endeavoru (aka One X)
 
 ## Building the ROM yourself
 
-Download the latest LiquidSmooth Source
+Download the latest Carbon-Rom Source
 	
-[https://github.com/LiquidSmooth](https://github.com/LiquidSmooth)
+[https://github.com/CarbonDev](https://github.com/CarbonDev)
 
 You will also need the extra tools from adrian-bl-hox-jb repos
 
@@ -18,7 +22,7 @@ In the root of the source folder do the following commands one by one -
 
 Now to download this device tree. Use this command -
 
-	git clone git://github.com/mattmanwrx/android_device_htc_endeavoru -b jb device/htc/endeavoru
+	git clone git://github.com/mattmanwrx/android_device_htc_endeavoru -b carbon device/htc/endeavoru
 
 Finally, we need to cherry pick a commit for the camera to work, so use these commands
 
@@ -36,9 +40,9 @@ That should be it for the tools needed, now lets build.
 
 	. build/envsetup.sh && lunch
 
-Chose the number that "liquid_endeavoru-userdebug" is on
+Chose the number that "carbon_endeavoru-userdebug" is on
 
-	mka liquid
+	mka carbon
 
 This will create a flashable.zip in the out/product/target/endeavoru folder
 
