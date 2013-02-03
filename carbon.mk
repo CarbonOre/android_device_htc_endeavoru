@@ -15,7 +15,7 @@
 #
 
 ## Specify phone tech before including full_phone
-$(call inherit-product, vendor/liquid/config/common_gsm.mk)
+$(call inherit-product, vendor/carbon/config/common_gsm.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := endeavoru
@@ -23,14 +23,14 @@ PRODUCT_RELEASE_NAME := endeavoru
 TARGET_BOOTANIMATION_NAME := vertical-720x1280
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/liquid/config/common_phone.mk)
+$(call inherit-product, vendor/carbon/config/common_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/htc/endeavoru/full_endeavoru.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := endeavoru
-PRODUCT_NAME := liquid_endeavoru
+PRODUCT_NAME := carbon_endeavoru
 PRODUCT_BRAND := htc_europe
 PRODUCT_MODEL := HTC One X
 PRODUCT_MANUFACTURER := HTC
