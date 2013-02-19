@@ -96,5 +96,6 @@ COMMON_GLOBAL_CFLAGS += -DUSES_TI_MAC80211
 BOARD_USE_NEW_LIBRIL_HTC := true
 
 # Kernel building
-TARGET_KERNEL_SOURCE := kernel/htc/endeavor
-TARGET_KERNEL_CONFIG :=  endeavoru_android_defconfig
+TARGET_KERNEL_SOURCE := kernel/htc/endeavoru
+TARGET_KERNEL_CONFIG :=  cyanogenmod_endeavoru_defconfig
+#TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3/bin/arm-eabi-
